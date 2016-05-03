@@ -10,7 +10,7 @@ my $cwd = getcwd();
 my $usage =<< "USAGE";
   Description: This perl script is used to split a large file containing multiple 
   FASTA sequences into separate sequence file including given number of sequences
-  Author: Longsheng.xing\@allwegene.com
+ 
   Version: 1.0
 =====================================================================================
 Options:
