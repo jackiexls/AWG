@@ -10,7 +10,7 @@ my $cwd = getcwd();
 my $usage =<< "USAGE";
   Description: This perl script is used to split a large file containing multiple 
   FASTA sequences into separate sequence file including given number of sequences
- 
+  Author: jackieforipa\@gmail.com
   Version: 1.0
 =====================================================================================
 Options:
@@ -19,7 +19,6 @@ Options:
 		-h  --help  print this help info
 
 =====================================================================================
-
 USAGE
 
 my $infile;
@@ -83,8 +82,9 @@ sub splitFASTA {
     close OUT;
   
   }
-
 }
+
+
 ############################################
 ### Subroutine for achieving formatted   ###
 ### printing to the specified filehandle ###
@@ -100,7 +100,6 @@ sub formattedPrint {
     my $substr = substr($seq,$i,80);
     print $file "$substr\n";
   }
-
 }
 
 #########################################
@@ -124,6 +123,5 @@ sub readFastaFile {
     }
   }
   close IN;
-
   return ($cnt,\@sequence);
 }
